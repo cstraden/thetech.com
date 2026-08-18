@@ -7,9 +7,9 @@
   <li><a href="#calculator">What will the price of an advertisement be?</a></li>
   <li><a href="#adSizes">How are advertisements sized in <em>The Tech</em>?</a></li>
   <li><a href="#commonSizes">What are the common advertisement sizes?</a></li>
-  <li><a href="#calendar">When does <em>The Tech</em> publish? When are special issues?</a></li>
+  <li><a href="https://thetech.com/ads/schedule">When does <em>The Tech</em> publish? When are special issues?</a></li>
   <li><a href="#services">What other advertising services does <em>The Tech</em> offer?</a></li>
-  <li><a href="#payment">How do I pay for an advertisement?</a></li>
+  <li><a href="https://thetech.com/ads/payment">How do I pay for an advertisement?</a></li>
 </ul>
 <h2 id="placeAnAd">How to place an advertisement</h2>
 <p>The fastest and easiest way to place an advertisement with us is via email at <a href='mailto:"tt-ads@mit.edu"'><em>tt-ads@mit.edu</em></a>.
@@ -21,8 +21,8 @@
     <li>Contact information</li>
     <li>MIT Account Number</li>
   <% else %>
-    <li>Contact information, including mailing address</li>
-    <li>Billing preference (check or credit card &mdash; Please do NOT include credit card numbers in your email)</li>
+    <li>Contact information</li>
+    <li>Billing preference (card, check, or wire transfer &mdash; Please do NOT include credit card numbers in your email)</li>
   <% end %>
 </ul>
 <p>
@@ -186,6 +186,8 @@
       <td>$<%= '%.2f' % (@ci_cost*80) %></td>
     </tr>
   </table>
+
+<%#
   <h2 id="calendar">Publication Calendar</h2>
   <div class="embedded-table-container">
     <%= render 'frontend_static_pages/ads/calendar' %>
@@ -206,6 +208,8 @@
     <li><i>Back To School:</i> Classes start on September 4. <em>The Tech</em> publishes the day after, on September 5.</li>
     <!--<li><i>Family Weekend:</i> MIT's family weekend 2020 is being held on October 23&ndash;24. <em>The Tech</em> publishes on October 22.</li>-->
     </ul>
+%>
+
   <h2 id="services">Other Services and Options</h2>
   <h3>Pre-Printed Inserts</h3>
   <p>Inserts placed in <em>The Tech</em> cost $2,000 for a single page insert and $2,500 for a multi-page insert.
@@ -216,6 +220,8 @@
       Typesetting costs $10 or 10% of the cost of your first advertisement; whichever is greater.
       Costs for more complicated advertisements (with pictures etc.) are negotiated on a case-by-case basis.
     </p>
+
+<%#
 <h2 id="payment">Payment for Advertisements</h2>
 <p>
   <% if @advertiser_type == :mit %>
@@ -231,11 +237,13 @@
        Cambridge, MA 02139-7029</blockquote>
   <% end %>
 </p>
+%>
+
 <h2 id="pubproof">Proof of Publication</h2>
 <p>
   The Tech provides proof of publication to advertisers.
       Advertisements placed may be viewed online as a PDF in our <a href="//thetech.com/issues">issue archive</a>.
-If you would like a physical tearsheet of your advertisement, please specify what kind of tearsheet you'd like (full tear, full issue, etc.)
+<%# If you would like a physical tearsheet of your advertisement, please specify what kind of tearsheet you'd like (full tear, full issue, etc.) %>
     </p>
 </div>
 </div>
