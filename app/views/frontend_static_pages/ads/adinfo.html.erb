@@ -186,30 +186,6 @@
       <td>$<%= '%.2f' % (@ci_cost*80) %></td>
     </tr>
   </table>
-
-<%#
-  <h2 id="calendar">Publication Calendar</h2>
-  <div class="embedded-table-container">
-    <%= render 'frontend_static_pages/ads/calendar' %>
-  </div>
-  <!--     <img style="float: right; padding: 10px 0px 10px 10px;" width="259px" height="1111" src="pubsched.png" alt="Calendar of publication dates" /> -->
-  <h3>Special Issues and Dates</h3>
-  <ul>
-    <!--<li><i>xFair:</i> MIT's spring career fair, also known as xFair is being held on February 4th.
-      <em>The Tech</em> publishes Thursday the weeks before and after the fair.</li>-->
-    <li><i>Spring Break:</i> Spring vacation for MIT is the week of March 25&ndash;29. <em>The Tech</em> does not publish during the break.</li>
-    <!--<li><i>Campus Preview Weekend:</i> CPW is the preview weekend for admitted students and their parents.
-    Typically drawing over 1,000 students, CPW 2019 takes place April 11&ndash;14.
-    <em>The Tech</em> publishes a special edition on April 12 &mdash; this edition is the best to take advantage of the opportunity to reach thousands of admitted freshmen and their families.</li>-->
-    <li><i>Campus Preview:</i> Campus Preview (CPW) is a preview weekend for admitted students and their parents, and takes place from April 11&ndash;14.
-    <em>The Tech</em> publishes a special edition on April 13.</li>
-    <li><i>Commencement:</i> <em>The Tech</em> publishes the day of commencement, making the issue a keepsake for thousands of graduates and their families. Commencement 2024 takes place on May 30&ndash;31.</li>
-    <li><i>Orientation:</i> <em>The Tech</em> publishes special issues during Orientation Week on August 22 and during the recruitment (rush) period for Fraternities, Sororities, and Independent Living Groups (FSILGs) on September 5.</li>
-    <li><i>Back To School:</i> Classes start on September 4. <em>The Tech</em> publishes the day after, on September 5.</li>
-    <!--<li><i>Family Weekend:</i> MIT's family weekend 2020 is being held on October 23&ndash;24. <em>The Tech</em> publishes on October 22.</li>-->
-    </ul>
-%>
-
   <h2 id="services">Other Services and Options</h2>
   <h3>Pre-Printed Inserts</h3>
   <p>Inserts placed in <em>The Tech</em> cost $2,000 for a single page insert and $2,500 for a multi-page insert.
@@ -220,30 +196,11 @@
       Typesetting costs $10 or 10% of the cost of your first advertisement; whichever is greater.
       Costs for more complicated advertisements (with pictures etc.) are negotiated on a case-by-case basis.
     </p>
-
-<%#
-<h2 id="payment">Payment for Advertisements</h2>
-<p>
-  <% if @advertiser_type == :mit %>
-    For MIT Advertisers, please include an MIT account number in your email to us.
-					   We will take care of the journal voucher. However, if you would prefer to pay via
-					   check or credit card, we accept those methods of payment as well.
-             <% else %>
-    We accept payment for advertisements either by check or credit card.
-		     Credit card payments are made online <a href='/ads/payment'>here</a>; checks can be mailed to
-
-    <blockquote>The Tech Business Department <br />
-       PO Box 391529 <br />
-       Cambridge, MA 02139-7029</blockquote>
-  <% end %>
-</p>
-%>
-
 <h2 id="pubproof">Proof of Publication</h2>
 <p>
   The Tech provides proof of publication to advertisers.
       Advertisements placed may be viewed online as a PDF in our <a href="//thetech.com/issues">issue archive</a>.
-<%# If you would like a physical tearsheet of your advertisement, please specify what kind of tearsheet you'd like (full tear, full issue, etc.) %>
+  <%# If you would like a physical tearsheet of your advertisement, please specify what kind of tearsheet you'd like (full tear, full issue, etc.) %>
     </p>
 </div>
 </div>
