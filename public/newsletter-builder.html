@@ -69,7 +69,7 @@
 
     async function loadFeed() {
       try {
-        const response = await fetch('/feed');
+        const response = await fetch('https://thetech.com/feed');
         if (!response.ok) throw new Error("Failed to reach the feed endpoint.");
         const xmlText = await response.text();
         
