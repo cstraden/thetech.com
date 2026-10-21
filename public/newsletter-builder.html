@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Tech Conrad - Substack Builder</title>
+  <title>The Tech - Substack Builder</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -69,7 +69,10 @@
 
     async function loadFeed() {
       try {
-        const response = await fetch('https://thetech.com/feed');
+        // Point to the live site via a CORS proxy for local testing
+        const targetUrl = encodeURIComponent('https://thetech.com/feed'); // Adjust if the exact path is /feed.xml or /rss
+        const response = await fetch(`https://api.allorigins.win/raw?url=${targetUrl}`);
+        //
         if (!response.ok) throw new Error("Failed to reach the feed endpoint.");
         const xmlText = await response.text();
         
