@@ -71,7 +71,7 @@
       try {
         // Point to the live site via a CORS proxy for local testing
         const targetUrl = encodeURIComponent('https://thetech.com/feed'); // Adjust if the exact path is /feed.xml or /rss
-        const response = await fetch(`https://api.allorigins.win/raw?url=${targetUrl}`);
+        const response = await fetch('https://corsproxy.io/?' + encodeURIComponent('https://thetech.com/feed'));
         //
         if (!response.ok) throw new Error("Failed to reach the feed endpoint.");
         const xmlText = await response.text();
